@@ -1,0 +1,449 @@
+/* Containers */
+
+.container-fluid {
+    margin-left:auto;
+    margin-right:auto;
+    padding:0;
+}
+
+/* Textes */
+
+h1 {
+font-family: 'Lobster', cursive;
+    font-size: 3.5em;
+    color: black;
+    text-align: left;
+}
+
+
+h2 {
+    font-family: Arial, sans-serif ;
+    color: #2ecc71;
+    font-size: 2em;
+    font-weight: bold;
+text-align: left;
+margin-bottom:20px;
+}
+
+h3 {
+    font-family: Arial, sans-serif ;
+    color: #777;
+    font-size: 1.5em;
+    font-weight: bold;
+text-align: inherit;
+}
+
+blockquote {
+    font-family: Arial;
+    color: black;
+    font-size: 1.39em;
+    font-weight: lighter;
+    font-style:oblique;
+text-align: left;
+}
+
+/* Fonds des parties */
+#ABB {
+   background-image:url("IMG/cross.png");
+   background-attachment:fixed;
+   padding-top:80px;
+}
+
+main {
+       background-image:url("IMG/halftone.png");
+    background-attachment:fixed;
+          font-family: Courier, serif;
+   text-align: left;
+
+}
+
+main h2, legend {
+    font-family: Arial;
+    color:#7f8c8d;
+     font-size: 2em;
+    font-weight: bold;
+text-align: left;
+}
+
+legend {
+    width:auto; /* Or auto */
+    padding:10px 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+}
+
+footer {
+     background-image:url("IMG/paper.png");
+    background-attachment:fixed;
+}
+
+
+/* images & illustrations */
+
+.thumbnail {
+    padding-top: 30px;
+    background:transparent;
+    border:transparent;
+}
+
+footer img {
+    display:inline-block;
+    vertical-align: bottom;
+    opacity: 0.08;
+    padding: 100px 10px 40px 10px;
+  
+}
+
+.glyphicon {
+    color: #2ecc71;
+}
+
+
+
+
+/* puces, séparations et icônes */
+
+ul {
+    list-style-type: circle;}
+    
+
+hr {
+  border-top: 3px dashed;
+  border-color:  black;
+  border-width: 1px;
+  margin: 0;
+}
+
+ /* navigation */
+    
+nav {
+  width:100%;
+  max-width: 960px; 
+  margin:auto;
+  height:inherit;
+  position:fixed;
+  font-size:1.2em;
+    display: inline-block; 
+}
+
+nav ul li a {
+    list-style-type: none;
+  background-color: transparent;
+  border: 4px solid #2ecc71;
+   line-height: 5px;
+  margin-left: 30px;
+}
+
+nav ul li a:hover {
+    list-style-type: none;
+  background-color: transparent;
+  border: 4px solid black;
+  margin-left: 30px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus {
+    background: transparent;
+    border: 4px solid #2ecc71;
+    color:#777;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+    background: transparent;
+    border: 4px solid black;
+}
+
+.navbar-default .navbar-collapse {
+    background: #ecf0f1;
+    opacity:0.8;
+ }
+
+/* Formulaire de contact */
+
+.contact {
+    width: 100%;
+    background:#ecf0f1;
+    display: block; 
+    font-size: 1.3em;
+    padding: 10px 20px 20px 20px;
+    margin:15px;
+}
+
+fieldset {
+    width:inherit;
+         border: 3px dashed black;
+     padding: 5px;
+    
+}
+
+
+
+.contact input[type=submit],
+.contact input[type=button],
+.contact input[type=text],
+.contact input[type=email],
+.contact textarea,
+.contact label
+{
+    font-family: Arial, sans-serif;
+    font-style: lighter;
+    font-size: 1.02em;
+    color: black;
+}
+.contact label {
+    max-width:70%;
+    display:block;
+    margin:auto;
+    margin-bottom: 20px;
+padding: 5px;
+
+}
+}
+.contact label > span{
+    display: inline;
+}
+.contact input[type=text],
+.contact input[type=email]
+{
+    background: #bdc3c7;
+    border: none;
+    width: 100%;
+    outline: none;
+    padding: 10px 0px 10px 0px;
+    font-style: normal;
+}
+.contact textarea{
+    font-style: normal;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    color: black;
+    padding: 10px 10px 10px 10px;
+    background: #bdc3c7;
+    outline: none;
+    border: none;
+    width: 100%;
+    overflow: hidden;
+    resize:none;
+    height:3em;
+}
+
+.contact textarea:focus,
+.contact input[type=text]:focus,
+.contact input[type=email]:focus,
+.contact input[type=email] :focus
+{
+    background: white;
+}
+
+.contact input[type=submit],
+.contact input[type=button] {
+    background: transparent;
+    border: 4px solid #2ecc71;
+    padding: 15px 10px 15px 10px;
+    color: #777;
+    font-family: Arial;
+    font-weight: lighter;
+    font-size:0.8em;
+    float:right;
+    margin-bottom:20px;
+}
+.contact input[type=submit]:hover,
+.contact input[type=button]:hover{
+    background: transparent;
+    border: 4px solid black;
+     color: black;
+    font-family: Arial;
+
+}
+
+    
+/* Simplon */
+
+#info {
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;              
+    background:#fcf8e3;
+    border:4px solid  #fbeed5;
+    width:95%;
+    max-width:900px;
+    margin:0 auto 40px auto;
+    font-family:arial;
+    font-size:12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+    #info .info-wrapper {
+        padding:10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+
+    }
+    
+    #info a {
+        color:#2ecc71;
+        text-decoration:none;
+    }
+    
+    #info p {
+        margin:5px 0 0 0;
+    }
+
+
+.container { 
+    position: relative; 
+    width: 960px; 
+    margin: 0 auto; 
+    -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;  
+}
+ 
+#filters {
+    margin:1%;
+    list-style:none;
+    font-family: Arial;
+    font-size: 1.1em;
+    background: #ecf0f1;
+}
+
+    #filters li {
+        float:left;
+    }
+    
+    #filters li span {
+        display: block;
+        padding:10px 20px;       
+        margin: 0px 15px 0px 15px;
+        text-decoration:none;
+         border: 4px solid #2ecc71;
+        color:#777;
+        cursor:pointer;
+    }
+    
+    #filters li span.active {
+        background: transparent;
+        border: 4px solid black;
+    }
+ 
+ 
+#portfoliolist .portfolio {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    width:23%;
+    margin:1%;
+    display:none;
+    float:left;
+    overflow:hidden;
+}
+
+    .portfolio-wrapper {
+        overflow:hidden;
+        position: relative !important;
+        background: #666;
+        cursor:pointer;
+    }
+
+    .portfolio img {
+        max-width:100%;
+        position: relative;
+    }
+    
+.portfolio .label {
+    position: absolute;
+    width: 100%;
+    height:40px;
+    bottom:-40px;
+    }
+
+ .portfolio .label-bg {
+    background: #e95a44;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    }
+    
+        .portfolio .label-text {
+            color:#fff;
+            position: relative;
+            z-index:500;
+            padding:5px 8px;
+        }
+            
+        .portfolio .text-category {
+                display:block;
+                font-size:9px;
+        }
+    
+    
+    
+
+
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container {
+        width: 768px; 
+    }
+}
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+    .container { 
+        width: 95%; 
+    }
+    
+    #portfoliolist .portfolio {
+        width:48%;
+        margin:1%;
+    }       
+
+    #ads {
+        display:none;
+    }
+    
+}
+
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 70%;
+    }
+    
+    #ads {
+        display:none;
+    }
+    
+}
+
+/* #Clearing */
+
+/* Self Clearing Goodness */
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+.clear {
+  clear: both;}
