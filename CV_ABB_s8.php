@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 
 <html lang="fr">
@@ -329,17 +332,32 @@
    <!-- Formulaire de contact -->
       <div class="row">
    <div class="col-xs-12">
-<form role="form" method="post" action="http://www.stilkr.com/CI/facteur.php" class="contact">
+   
+   <!-- facteur début-->
+   <?php if(array_key_exists('errors', $_SESSION)): ?>
+   <div class="alert alert-danger">
+   <?=implode("<br>", $_SESSION['errors']);?>
+   </div>
+   <?php endif; ?>
+   <?php if(array_key_exists('success', $_SESSION)): ?>
+   <div class="alert alert-success">
+   <p>Merci ! Je reviens vers vous dans les meilleurs délais.</p>
+   </div>
+    <?php endif; ?>
+   <!-- facteur fin-->
+	  
+	  
+<form role="form" method="post" action="facteur.php" class="contact">
     <fieldset>
     <legend><span class="glyphicon glyphicon-send"></span> contactez-moi</legend>
 <p><label for="patronyme">
-<span class="glyphicon glyphicon-user"></span>&nbsp;<input type="text" name="patronyme" required="true" placeholder="Vos nom et prénom" />
+<span class="glyphicon glyphicon-user"></span>&nbsp;<input type="text" name="patronyme" id="patronyme" class="form-control" required="true" placeholder="Vos nom et prénom" />
 </label></p>
 <p><label for="courriel">
-<span class="glyphicon glyphicon-envelope"></span>&nbsp;<input type="email" name="courriel" required="true" placeholder="Votre adresse e-mail" />
+<span class="glyphicon glyphicon-envelope"></span>&nbsp;<input type="email" name="courriel" id="courriel" class="form-control" required="true" placeholder="Votre adresse e-mail" />
 </label></p>
 <p><label for="message">
-<span class="glyphicon glyphicon-pencil"></span><textarea name="message" onkeyup="adjust_textarea(this)" required="true" placeholder="Votre message"></textarea>
+<span class="glyphicon glyphicon-pencil"></span><textarea name="message" onkeyup="adjust_textarea(this)" id="message" class="form-control" required="true" placeholder="Votre message"></textarea>
 </label></p>
 <p><label>
 <span>&nbsp;</span><input type="submit" value="J'ai besoin d'une développeuse" />
@@ -418,3 +436,8 @@ function adjust_textarea(h) {
        
 </body>
 </html>
+ <?php
+ unset($_SESSION['inputs']);
+  unset($_SESSION['success']);
+   unset($_SESSION['errors']);
+ ?>
