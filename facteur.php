@@ -24,7 +24,7 @@ $errors = [];
 	else {
 	$_SESSION['success']=1;
 	
-$to = 'stilkr+github@gmail.com'; 
+$to = '&#115;&#116;&#105;&#108;&#107;&#114;&#43;&#103;&#105;&#116;&#104;&#117;&#98;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'; 
 $subject = 'Message du Cv Github';
 $message = $_POST['patronyme']  . $_POST['courriel'] . $_POST['message'];	
 mail($to, $subject, $message);
